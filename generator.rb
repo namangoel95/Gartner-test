@@ -3,7 +3,6 @@ require_relative 'Formatter'
 class WeeklyFeedGenerator
   def self.generate(data, type)
     result = Formatter.for(type).format(data)
-    puts result
     create_products(result) 
   end
 end
